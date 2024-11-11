@@ -4,7 +4,7 @@
 
 This project performs **real-time analysis, visualization, and storage** of cryptocurrency data using **Apache Kafka**, **Apache Spark**, and **MongoDB**. It fetches live cryptocurrency prices from the API endpoint [api.coincap.io/v2/assets](https://api.coincap.io/v2/assets), processes the data, and streams it for real-time analytics. 
 
-### 🛠️ Architecture
+## 🛠️ Architecture
 The project follows a **Producer-Consumer** pattern:
 - **Producer**: Continuously fetches cryptocurrency data from the API and publishes it to a Kafka topic.
 - **Consumer**: Consumes data from the Kafka topic, processes it using Apache Spark, and stores the processed data in MongoDB for further visualization.
