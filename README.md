@@ -1,8 +1,8 @@
 # Real-Time Cryptocurrency Data Analysis
 
-## 📄 Description
+## 📄 Project Overview
 
-This project performs **real-time analysis, visualization, and storage** of cryptocurrency data using **Apache Kafka**, **Apache Spark**, and **MongoDB**. It fetches live cryptocurrency prices from the API endpoint [api.coincap.io/v2/assets](https://api.coincap.io/v2/assets), processes the data, and streams it for real-time analytics. 
+This project focuses on real-time cryptocurrency data analysis using **Apache Kafka**, **MongoDB**, and **Python** for data visualization. The system fetches live cryptocurrency data from the CoinCap public [API](https://api.coincap.io/v2/assets), processes it using Kafka, stores it in MongoDB, and visualizes the data to observe price fluctuations over time.
 
 ## 🛠️ Architecture
 The project follows a **Producer-Consumer** pattern:
@@ -15,10 +15,12 @@ The project follows a **Producer-Consumer** pattern:
 
 ## 🛠️ Technologies Used
 
-- **Apache Kafka**: For real-time data streaming between producer and consumer.
-- **Apache Spark**: To process and analyze data in real-time.
-- **MongoDB**: For storing processed data to support visualization and reporting.
-- **Python (matplotlib)**: For visualizing the stored data.
+- **Python**: Data fetching, processing, and programming.
+- **Apache Kafka**: Real-time data streaming.
+- **MongoDB**: NoSQL database for storing historical data.
+- **CoinCap API**: Source for live cryptocurrency data.
+- **Pandas**: Data analysis and manipulation.
+- **Matplotlib**: Data visualization and plotting.
 
 ---
 
