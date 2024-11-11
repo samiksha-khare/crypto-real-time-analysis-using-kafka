@@ -1,0 +1,29 @@
+1. Download and Extract Kafka
+wget https://downloads.apache.org/kafka/3.8.1/kafka_2.12-3.8.1.tgz
+tar -xvf kafka_2.12-3.8.1.tgz
+cd kafka_2.13-3.6.0
+
+2. Start Zookeeper Serve
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+3. Start Kafka Server
+bin/kafka-server-start.sh config/server.properties
+
+4. Create a Kafka Topic
+bin/kafka-topics.sh --create --topic crypto-currency --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+
+Start Producer
+bin/kafka-console-producer.sh --topic crypto-currency --bootstrap-server localhost:9092
+
+5. Start Consumer
+bin/kafka-console-consumer.sh --topic crypto-currency --bootstrap-server localhost:9092 --from-beginning
+
+6. Install MongoDB
+brew tap mongodb/brew
+brew install mongodb-community
+brew services start mongodb/brew/mongodb-community
+
+
+
+
+

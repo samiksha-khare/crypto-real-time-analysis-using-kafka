@@ -1,0 +1,5 @@
+kafka_*
+kafka_*/
+.idea
+.ipynb_checkpoints
+.DS_Store
