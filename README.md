@@ -7,7 +7,7 @@ This project focuses on real-time cryptocurrency data analysis using **Apache Ka
 ## 🛠️ Architecture
 The project follows a **Producer-Consumer** pattern:
 - **Producer**: Continuously fetches cryptocurrency data from the API and publishes it to a Kafka topic.
-- **Consumer**: Consumes data from the Kafka topic, processes it using Apache Spark, and stores the processed data in MongoDB for further visualization.
+- **Consumer**: Consumes data from the Kafka topic, and stores the processed data in MongoDB for further visualization.
 
 ![Architecture](Architecture.png)
 
