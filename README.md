@@ -2,7 +2,7 @@
 
 ## 📄 Project Overview
 
-This project focuses on real-time cryptocurrency data analysis using **Apache Kafka**, **MongoDB**, and **Python** for data visualization. The system fetches live cryptocurrency data from the CoinCap public [API](https://api.coincap.io/v2/assets), processes it using Kafka, stores it in MongoDB, and visualizes the data to observe price fluctuations over time.
+This project focuses on real-time cryptocurrency data analysis using **Apache Kafka**, **MongoDB**, and **Streamlit** for data visualization. The system fetches live cryptocurrency data from the CoinCap public [API](https://api.coincap.io/v2/assets), processes it using Kafka, stores it in MongoDB, and visualizes the data to observe price fluctuations over time.
 
 ## 🛠️ Architecture
 The project follows a **Producer-Consumer** pattern:
@@ -20,11 +20,15 @@ The project follows a **Producer-Consumer** pattern:
 - **MongoDB**: NoSQL database for storing historical data.
 - **CoinCap API**: Source for live cryptocurrency data.
 - **Pandas**: Data analysis and manipulation.
-- **Matplotlib**: Data visualization and plotting.
+- **Streamlit**: Data visualization and plotting using Matplotlib.
+- **Docker**: For containerization of the application
 
 ---
 
-## ⚙️ Initial Setup
+## ⚙️ Setup with Docker
+Run ``docker-compose up`` to start the services defined in the compose file
+
+## ⚙️ Setup without Docker
 
 Follow the steps below to set up the project on your local system:
 
@@ -66,5 +70,12 @@ brew tap mongodb/brew
 brew install mongodb-community
 brew services start mongodb/brew/mongodb-community
 ```
+
+### Step 8: Streamlit
+```
+pip install streamlit
+streamlit run streamlit_crypto_data_visualization.py
+```
+
 
   
